@@ -22,10 +22,7 @@ import MaskedInput from 'react-text-mask'
 import { siretMask, sirenMask } from 'text-mask-siret';
 
 const mask = siretMask;
-/**
- * Or
- * const mask = sirenMask;
- */
+// Or: const mask = sirenMask;
 
 export default () => <MaskedInput mask={mask} />;
 ```
@@ -39,7 +36,7 @@ export default () => <MaskedInput mask={mask} />;
   vanillaTextMask.maskInput({
     inputElement: document.getElementById('siret-input'),
     mask: textMaskSiret.siretMask,
-    // Or mask: textMaskSiret.sirenMask
+    // Or: mask: textMaskSiret.sirenMask
   });
 });
 </script>

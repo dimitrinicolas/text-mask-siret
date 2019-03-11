@@ -1,4 +1,4 @@
-# text-mask-siret [![Build Status][travis badge]][travis link] [![Coverage Status][coveralls badge]][coveralls link]
+# text-mask-siret [![Build Status][travis badge]][travis link]
 
 Text Mask function for french SIRET and SIREN.
 
@@ -67,5 +67,3 @@ This project is licensed under the [MIT license](LICENSE).
 
 [travis badge]: https://travis-ci.org/dimitrinicolas/text-mask-siret.svg?branch=master
 [travis link]: https://travis-ci.org/dimitrinicolas/text-mask-siret
-[coveralls badge]: https://coveralls.io/repos/github/dimitrinicolas/text-mask-siret/badge.svg?branch=master
-[coveralls link]: https://coveralls.io/github/dimitrinicolas/text-mask-siret?branch=master

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>text-mask-siret demo</title>
+</head>
+
+<body>
+  <h1>text-mask-siret demo</h1>
+
+  <h2>siretMask</h2>
+
+  <input id="siret-input" type="text" placeholder="SIRET">
+
+  <h2>sirenMask</h2>
+
+  <input id="siren-input" type="text" placeholder="SIREN">
+
+  <h2>Test values</h2>
+
+  <ul>
+    <li>SIRET: 12345678900010</li>
+    <li>SIREN: 123456789</li>
+  </ul>
+
+  <script src="vendor/vanillaTextMask.js"></script>
+  <script src="../dist/text-mask-siret.umd.min.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      vanillaTextMask.maskInput({
+        inputElement: document.getElementById('siret-input'),
+        mask: textMaskSiret.siretMask,
+        guide: false,
+      });
+
+      vanillaTextMask.maskInput({
+        inputElement: document.getElementById('siren-input'),
+        mask: textMaskSiret.sirenMask,
+        guide: false,
+      });
+    });
+  </script>
+</body>
+
+</html>
